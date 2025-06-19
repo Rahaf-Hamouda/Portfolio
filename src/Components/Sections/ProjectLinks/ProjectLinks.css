@@ -1,0 +1,30 @@
+.project-links-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: 1rem;
+    justify-content: center;
+  }
+  
+  .project-link {
+    background-color: #f8f0f4;
+    color: #79305a;
+    border: 1px solid #b690a4;
+    padding: 0.5rem 1rem;
+    border-radius: 1.2rem;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+  }
+  
+  .project-link:hover {
+    background-color: #b690a4;
+    color: white;
+  }
+  
+  .link-icon {
+    margin-left: 0.5rem;
+  }
+  

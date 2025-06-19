@@ -1,0 +1,15 @@
+.containerReact {
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    height: 50rem;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.Img {
+    height: 20rem;
+    margin: 15px;
+}
