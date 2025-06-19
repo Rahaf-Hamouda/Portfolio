@@ -1,13 +1,13 @@
-import './Work.css';
-import login from '../../assets/login.png';
-import card from '../../assets/card.png';
-import de6 from '../../assets/de6.png';
-import { useState } from 'react';
+import "./Work.css";
+import login from "../../assets/login.png";
+import card from "../../assets/card.png";
+import de6 from "../../assets/de6.png";
+import { useState } from "react";
 
-import WordPress from '../Sections/Wordpress/Wodpress';
-import HTML from '../Sections/HTMLCSS/HTML';
-import ReactGallery from '../Sections/React/React';
-import ProjectLinks from '../Sections/ProjectLinks/ProjectLinks';
+import WordPress from "../Sections/Wordpress/Wodpress";
+import HTML from "../Sections/HTMLCSS/HTML";
+import ReactGallery from "../Sections/React/React";
+import ProjectLinks from "../Sections/ProjectLinks/ProjectLinks";
 
 const Works = () => {
   const [activeGallery, setActiveGallery] = useState(null);
@@ -29,7 +29,9 @@ const Works = () => {
             <button
               className="worksBtn"
               onClick={() =>
-                setActiveGallery(activeGallery === 'wordpress' ? null : 'wordpress')
+                setActiveGallery(
+                  activeGallery === "wordpress" ? null : "wordpress"
+                )
               }
             >
               See More
@@ -46,7 +48,7 @@ const Works = () => {
             <button
               className="worksBtn"
               onClick={() =>
-                setActiveGallery(activeGallery === 'html' ? null : 'html')
+                setActiveGallery(activeGallery === "html" ? null : "html")
               }
             >
               See More
@@ -63,7 +65,7 @@ const Works = () => {
             <button
               className="worksBtn"
               onClick={() =>
-                setActiveGallery(activeGallery === 'react' ? null : 'react')
+                setActiveGallery(activeGallery === "react" ? null : "react")
               }
             >
               See More
@@ -72,31 +74,31 @@ const Works = () => {
         </div>
       </div>
 
-      {(activeGallery === 'wordpress' ||
-        activeGallery === 'html' ||
-        activeGallery === 'react') && (
+      {(activeGallery === "wordpress" ||
+        activeGallery === "html" ||
+        activeGallery === "react") && (
         <div className="active-gallery-wrapper">
-          {activeGallery === 'wordpress' && <WordPress />}
-          {activeGallery === 'html' && <HTML />}
-          {activeGallery === 'react' && <ReactGallery />}
+          {activeGallery === "wordpress" && <WordPress />}
+          {activeGallery === "html" && <HTML />}
+          {activeGallery === "react" && <ReactGallery />}
 
-          {activeGallery === 'html' && (
+          {activeGallery === "html" && (
             <ProjectLinks
               links={[
                 {
-                  title: 'Template One',
-                  url: 'https://rahaf-hamouda.github.io/HTML_CSS_Template_One/',
+                  title: "Template One",
+                  url: "https://rahaf-hamouda.github.io/HTML_CSS_Template_One/",
                 },
               ]}
             />
           )}
 
-          {activeGallery === 'react' && (
+          {activeGallery === "react" && (
             <ProjectLinks
               links={[
                 {
-                  title: 'Beauty',
-                  url: 'https://beauty-project-pi4w.vercel.app/',
+                  title: "Beauty",
+                  url: "https://beauty-project-pi4w.vercel.app/",
                 },
               ]}
             />
