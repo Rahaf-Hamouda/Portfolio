@@ -173,6 +173,14 @@
     height: 11rem;
     min-width: 11rem;
   }
+  .cards-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    max-width: 65rem;
+    margin: 0 auto;
+    flex-wrap: wrap;
+  }
 }
 
 .project-link-wrapper {
