@@ -93,12 +93,11 @@
   }
 }
 
-/* تعديل cards-wrapper ليجعل البطاقات صف واحد مع تمرير أفقي عند الحاجة */
 .cards-wrapper {
   display: flex;
   justify-content: center;
   gap: 1rem;
-  max-width: 65rem; /* نفس عرض البطاقات */
+  max-width: 65rem;
   margin: 0 auto;
   flex-wrap: nowrap;
 }
@@ -112,7 +111,6 @@
   border-radius: 10px;
 }
 
-/* حاوية المعرض والروابط تحت البطاقات */
 .active-gallery-wrapper {
   max-width: 65rem;
   width: 106%;
@@ -123,7 +121,6 @@
   animation: fadeIn 0.6s ease-in-out;
 }
 
-/* تأثير ظهور ناعم */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -191,4 +188,4 @@
     max-width: 100%;
     padding: 0 1rem;
   }
-  }
+}

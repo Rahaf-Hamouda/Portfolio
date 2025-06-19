@@ -1,4 +1,3 @@
-import './HTML.css';
 import ProfileCard from '../../../assets/ProfileCard.png';
 import Card from '../../../assets/cardhtml.png';
 import Coffee from '../../../assets/coffeehtml.png';

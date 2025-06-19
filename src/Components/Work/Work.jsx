@@ -1,4 +1,3 @@
-// Works.jsx
 import './Work.css';
 import login from '../../assets/login.png';
 import card from '../../assets/card.png';
@@ -20,9 +19,7 @@ const Works = () => {
         I take pride in paying attention to the smallest details
       </span>
 
-      {/* Wrapper للبـطاقات */}
       <div className="cards-wrapper">
-        {/* WordPress */}
         <div className="card_container">
           <div className="card_title">
             <h2>WordPress Project</h2>
@@ -40,7 +37,6 @@ const Works = () => {
           </div>
         </div>
 
-        {/* HTML & CSS */}
         <div className="card_container">
           <div className="card_title">
             <h2>HTML & CSS Project</h2>
@@ -58,7 +54,6 @@ const Works = () => {
           </div>
         </div>
 
-        {/* ReactJS */}
         <div className="card_container">
           <div className="card_title">
             <h2>ReactJS Project</h2>
@@ -77,7 +72,6 @@ const Works = () => {
         </div>
       </div>
 
-      {/* المعرض والروابط تحت البطاقات */}
       {(activeGallery === 'wordpress' ||
         activeGallery === 'html' ||
         activeGallery === 'react') && (

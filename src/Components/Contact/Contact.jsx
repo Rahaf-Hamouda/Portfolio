@@ -35,7 +35,7 @@ const Contact = () => {
       opacity: 1,
       transition: {
         when: "beforeChildren",
-        staggerChildren: 0.3, // يمكن إبقاءها هكذا لتناسق التتابع
+        staggerChildren: 0.3,   
       },
     },
   };
@@ -46,7 +46,7 @@ const Contact = () => {
       y: 0,
       opacity: 1,
       transition: {
-        duration: 1.2, // مدة أطول للظهور
+        duration: 1.2,
         ease: "easeOut",
       },
     },
