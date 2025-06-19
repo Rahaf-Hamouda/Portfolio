@@ -77,6 +77,7 @@ overflow-y: auto;
 }
 .folllow p {
     color: #79305a;
+    text-decoration:none;
 }
 .candy {
     padding: 0px;
