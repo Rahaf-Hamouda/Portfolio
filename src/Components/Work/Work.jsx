@@ -15,7 +15,7 @@ const Works = () => {
 
   const scrollToGallery = () => {
     if (galleryRef.current) {
-      const yOffset = -400;   
+      const yOffset = -350;   
       const y =
         galleryRef.current.getBoundingClientRect().top +
         window.pageYOffset +
