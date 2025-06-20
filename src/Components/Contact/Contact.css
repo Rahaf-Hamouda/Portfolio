@@ -69,12 +69,16 @@ overflow-y: auto;
     justify-content: center;
     display: flex;
     flex-direction: row;
-    box-shadow: 0 0 15px -5px;
+    box-shadow: 0 4px 15px rgba(121, 48, 90, 0.4);
     border-radius: 25px;
     height: 60px;
     width: 15rem;
     margin:5px;
 }
+.folllow:hover {
+    box-shadow: 0 6px 20px rgba(121, 48, 90, 0.6);
+}
+
 .folllow p {
     color: #79305a;
     text-decoration:none;

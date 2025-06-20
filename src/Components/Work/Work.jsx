@@ -2,7 +2,7 @@ import "./Work.css";
 import login from "../../assets/login.png";
 import card from "../../assets/card.png";
 import de6 from "../../assets/de6.png";
-import { useState } from "react";
+import { useState, useRef } from "react";
 
 import WordPress from "../Sections/Wordpress/Wodpress";
 import HTML from "../Sections/HTMLCSS/HTML";
@@ -11,6 +11,30 @@ import ProjectLinks from "../Sections/ProjectLinks/ProjectLinks";
 
 const Works = () => {
   const [activeGallery, setActiveGallery] = useState(null);
+  const galleryRef = useRef(null);
+
+  const scrollToGallery = () => {
+    if (galleryRef.current) {
+      const yOffset = -400;   
+      const y =
+        galleryRef.current.getBoundingClientRect().top +
+        window.pageYOffset +
+        yOffset;
+
+      window.scrollTo({ top: y, behavior: "smooth" });
+    }
+  };
+
+  const handleCardClick = (galleryName) => {
+    const newGallery = activeGallery === galleryName ? null : galleryName;
+    setActiveGallery(newGallery);
+
+    setTimeout(() => {
+      if (newGallery) {
+        scrollToGallery();
+      }
+    }, 100);
+  };
 
   return (
     <section id="works">
@@ -24,17 +48,13 @@ const Works = () => {
           <div className="card_title">
             <h2>WordPress Project</h2>
             <div className="image_container">
-              <img src={de6} alt="" className="worksImg" />
+              <img src={de6} alt="WordPress Project" className="worksImg" />
             </div>
             <button
               className="worksBtn"
-              onClick={() =>
-                setActiveGallery(
-                  activeGallery === "wordpress" ? null : "wordpress"
-                )
-              }
+              onClick={() => handleCardClick("wordpress")}
             >
-              See More
+              {activeGallery === "wordpress" ? "Hide" : "See More"}
             </button>
           </div>
         </div>
@@ -43,15 +63,13 @@ const Works = () => {
           <div className="card_title">
             <h2>HTML & CSS Project</h2>
             <div className="image_container">
-              <img src={card} alt="" className="worksImg" />
+              <img src={card} alt="HTML & CSS Project" className="worksImg" />
             </div>
             <button
               className="worksBtn"
-              onClick={() =>
-                setActiveGallery(activeGallery === "html" ? null : "html")
-              }
+              onClick={() => handleCardClick("html")}
             >
-              See More
+              {activeGallery === "html" ? "Hide" : "See More"}
             </button>
           </div>
         </div>
@@ -60,15 +78,13 @@ const Works = () => {
           <div className="card_title">
             <h2>ReactJS Project</h2>
             <div className="image_container">
-              <img src={login} alt="" className="worksImg" />
+              <img src={login} alt="React Project" className="worksImg" />
             </div>
             <button
               className="worksBtn"
-              onClick={() =>
-                setActiveGallery(activeGallery === "react" ? null : "react")
-              }
+              onClick={() => handleCardClick("react")}
             >
-              See More
+              {activeGallery === "react" ? "Hide" : "See More"}
             </button>
           </div>
         </div>
@@ -77,7 +93,7 @@ const Works = () => {
       {(activeGallery === "wordpress" ||
         activeGallery === "html" ||
         activeGallery === "react") && (
-        <div className="active-gallery-wrapper">
+        <div ref={galleryRef} className="active-gallery-wrapper">
           {activeGallery === "wordpress" && <WordPress />}
           {activeGallery === "html" && <HTML />}
           {activeGallery === "react" && <ReactGallery />}
