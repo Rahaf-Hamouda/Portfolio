@@ -87,7 +87,7 @@ const Skills = () => {
             whileHover={{ rotate: 5 }}
           />
           <div className="skillBarText">
-            <h2>Web Design</h2>
+            <h2>Front End developer</h2>
             <p>Skilled front-end developer with proficiency in HTML, CSS, JavaScript, ReactJS, Bootstrap, TailwindCSS and c#</p>
           </div>
         </motion.div>

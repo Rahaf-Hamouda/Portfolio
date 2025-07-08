@@ -38,7 +38,7 @@ const Works = () => {
 
   return (
     <section id="works">
-      <h2 className="workstitle">My Portfolio</h2>
+      <h2 className="workstitle">My Project</h2>
       <span className="worksDesc">
         I take pride in paying attention to the smallest details
       </span>
@@ -61,7 +61,7 @@ const Works = () => {
 
         <div className="card_container">
           <div className="card_title">
-            <h2>HTML & CSS Project</h2>
+            <h2>HTML & CSS & JS Project</h2>
             <div className="image_container">
               <img src={card} alt="HTML & CSS Project" className="worksImg" />
             </div>
@@ -104,6 +104,38 @@ const Works = () => {
                 {
                   title: "Template One",
                   url: "https://rahaf-hamouda.github.io/HTML_CSS_Template_One/",
+                },
+                 {
+                  title: "Template Two",
+                  url: "https://rahaf-hamouda.github.io/Kasper-Template-Two/",
+                },
+                {
+                  title: "Flex-Panel-Gallery",
+                  url: " https://rahaf-hamouda.github.io/Flex-Panel-Gallery/",
+                },
+                {
+                  title: "Array-Cardio",
+                  url: "https://rahaf-hamouda.github.io/Array-Cardio/",
+                },
+                {
+                  title: "Scoped-CSS-Variables-and-JS",
+                  url: "https://rahaf-hamouda.github.io/Scoped-CSS-Variables-and-JS/",
+                },
+                {
+                  title: "JS-and-CSS-Clock",
+                  url: " https://rahaf-hamouda.github.io/-JS-and-CSS-Clock/",
+                },
+                {
+                  title: "JavaScript-Drum-Kit",
+                  url: "https://rahaf-hamouda.github.io/JavaScript-Drum-Kit/",
+                },
+                {
+                  title: "Type-Ahead",
+                  url: "https://rahaf-hamouda.github.io/Type-Ahead/",
+                },
+                {
+                  title: "HTML5-Canvas-Drawing-App",
+                  url: "https://rahaf-hamouda.github.io/HTML5-Canvas-Drawing-App/",
                 },
               ]}
             />
