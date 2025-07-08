@@ -1,4 +1,4 @@
-#skills {
+/* #skills {
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -57,4 +57,167 @@
         font-size:5vw;
     }
 }
+ */
 
+
+
+
+
+
+
+
+
+ #skills {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    max-width: 90rem;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0;
+    background: transparent; 
+}
+
+.aboutTitle {
+    font-size: 3.5rem;
+    font-weight: 700;
+    padding-top: 1rem;
+    margin-bottom: 3rem;
+    color: #79305a; 
+    position: relative;
+}
+
+.aboutTitle:after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background: #79305a; 
+    border-radius: 2px;
+}
+
+.aboutCardsContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 85%;
+    margin: 0 auto;
+}
+
+.aboutRow {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    gap: 2rem; 
+}
+
+.aboutCard {
+    display: flex;
+    flex: 1;
+    margin: 0;
+    padding: 2rem;
+    border-radius: 1rem;
+    background: #ffffff;
+    box-shadow: 0 4px 20px rgba(106, 27, 154, 0.1); 
+    transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+    border: 1px solid #e2e8f0;
+}
+
+.aboutCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(106, 27, 154, 0.15);
+    border-color: #b33b72; 
+}
+
+.aboutCardImg {
+    object-fit: contain;
+    height: 7rem;
+    width:7rem;
+    margin-right: 2.5rem;
+    filter: hue-rotate(10deg) saturate(1.2); 
+}
+
+.aboutCardText {
+    flex: 1;
+    text-align: left;
+}
+
+.aboutCardText h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1.2rem;
+    color: #79305a;
+}
+
+.aboutCardText p {
+    font-size: large;
+    font-weight: 400;
+    color: #79305a;
+    line-height: 1.4;
+}
+
+.aboutCardText strong {
+    color: #b690a4; /* Purple accent */
+    font-weight: 600;
+}
+
+@media screen and (max-width: 1024px) {
+    .aboutRow {
+        flex-direction: column;
+        gap: 1.8rem;
+    }
+    
+    .aboutCard {
+        padding: 2rem;
+    }
+    
+    .aboutTitle {
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .aboutCard {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 1.8rem;
+    }
+    
+    .aboutCardImg {
+        margin-right: 0;
+        margin-bottom: 1.5rem;
+    }
+    
+    .aboutCardText {
+        text-align: center;
+    }
+    
+    .aboutTitle {
+        font-size: 2.5rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .aboutCard {
+        padding: 1.5rem;
+    }
+    
+    .aboutTitle {
+        font-size: 2.2rem;
+    }
+    
+    .aboutCardText h2 {
+        font-size: 1.3rem;
+    }
+    
+    .aboutCardText p {
+        font-size: 0.95rem;
+    }
+}
