@@ -95,13 +95,13 @@ const Intro = () => {
 
         <motion.span className="introText" variants={textVariants}>
           I'm<span className="introName"> Rahaf</span> <br />
-          Front End Developer
+           Front-End Develope
         </motion.span>
 
         <motion.p className="introPara" variants={textVariants}>
-          I am Skilled  Front End Developer With experience in creating
+            I am a skilled Front-End Developer with experience in creating
           <br />
-          visually appealing and user friendly website
+           visually appealing and user-friendly websites.
         </motion.p>
 
         <motion.button
