@@ -85,7 +85,7 @@
     font-size: 3.5rem;
     font-weight: 700;
     padding-top: 1rem;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
     color: #79305a; 
     position: relative;
 }
@@ -113,7 +113,7 @@
 .aboutRow {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
     gap: 2rem; 
 }
 
