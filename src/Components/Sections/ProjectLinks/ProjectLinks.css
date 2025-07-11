@@ -117,3 +117,19 @@
   background-color: #333;
   color: white;
 }
+@media screen and (max-width: 575px) {
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); 
+    gap: 0.8rem; 
+    padding: 0 0.5rem;
+  }
+
+  .project-card {
+    width: 100%; 
+    min-width: 0; 
+    margin: 0;
+    padding: 0.8rem; 
+    box-sizing: border-box;
+  }
+}
