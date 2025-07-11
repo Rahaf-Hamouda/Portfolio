@@ -286,8 +286,10 @@ const About = () => {
             <div className="aboutCardText">
               <h2>Technical Solutions</h2>
               <p>
-               Specialized in developing fast and secure web interfaces, with modern responsive designs, compliant with top SEO standards, and high-quality organized code.         </p>
-            </div>
+  Expert in building performant, secure web interfaces with responsive designs, 
+  employing professional Git version control to deliver SEO-optimized solutions 
+  with clean, maintainable code architecture.
+</p> </div>
           </motion.div>
         </div>
       </motion.div>

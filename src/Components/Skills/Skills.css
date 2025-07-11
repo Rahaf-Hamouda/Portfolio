@@ -221,3 +221,23 @@
         font-size: 0.95rem;
     }
 }
+.tech-features {
+  margin-top: 0.8rem;
+  padding-left: 1.2rem;
+}
+
+.tech-features li {
+  position: relative;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.tech-features li::before {
+  content: "•";
+  color: var(--accent-color); /* Use your theme color */
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}

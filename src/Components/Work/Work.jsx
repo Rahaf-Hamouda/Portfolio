@@ -1,6 +1,6 @@
 import "./Work.css";
 import login from "../../assets/login.png";
-import card from "../../assets/card.png";
+import card from "../../assets/ProfileCard.png";
 import de6 from "../../assets/de6.png";
 import { useState, useRef } from "react";
 
@@ -39,10 +39,6 @@ const Works = () => {
   return (
     <section id="works">
       <h2 className="workstitle">My Project</h2>
-      <span className="worksDesc">
-        I take pride in paying attention to the smallest details
-      </span>
-
       <div className="cards-wrapper">
         <div className="card_container">
           <div className="card_title">
@@ -98,59 +94,73 @@ const Works = () => {
           {activeGallery === "html" && <HTML />}
           {activeGallery === "react" && <ReactGallery />}
 
-          {activeGallery === "html" && (
-            <ProjectLinks
-              links={[
-                {
-                  title: "Template One",
-                  url: "https://rahaf-hamouda.github.io/HTML_CSS_Template_One/",
-                },
-                 {
-                  title: "Template Two",
-                  url: "https://rahaf-hamouda.github.io/Kasper-Template-Two/",
-                },
-                {
-                  title: "Flex-Panel-Gallery",
-                  url: " https://rahaf-hamouda.github.io/Flex-Panel-Gallery/",
-                },
-                {
-                  title: "Array-Cardio",
-                  url: "https://rahaf-hamouda.github.io/Array-Cardio/",
-                },
-                {
-                  title: "Scoped-CSS-Variables-and-JS",
-                  url: "https://rahaf-hamouda.github.io/Scoped-CSS-Variables-and-JS/",
-                },
-                {
-                  title: "JS-and-CSS-Clock",
-                  url: " https://rahaf-hamouda.github.io/-JS-and-CSS-Clock/",
-                },
-                {
-                  title: "JavaScript-Drum-Kit",
-                  url: "https://rahaf-hamouda.github.io/JavaScript-Drum-Kit/",
-                },
-                {
-                  title: "Type-Ahead",
-                  url: "https://rahaf-hamouda.github.io/Type-Ahead/",
-                },
-                {
-                  title: "HTML5-Canvas-Drawing-App",
-                  url: "https://rahaf-hamouda.github.io/HTML5-Canvas-Drawing-App/",
-                },
-              ]}
-            />
-          )}
-
-          {activeGallery === "react" && (
-            <ProjectLinks
-              links={[
-                {
-                  title: "Beauty",
-                  url: "https://beauty-project-pi4w.vercel.app/",
-                },
-              ]}
-            />
-          )}
+{activeGallery === "html" && (
+  <div ref={galleryRef} className="active-gallery-wrapper">
+    <ProjectLinks
+      links={[
+        {
+          title: "Template One",
+          url:"https://rahaf-hamouda.github.io/HTML_CSS_Template_One/",
+          github: "https://github.com/Rahaf-Hamouda/HTML_CSS_Template_One",
+        },
+        {
+          title: "Template Two",
+          url:"https://rahaf-hamouda.github.io/Kasper-Template-Two/",
+          github: "https://github.com/Rahaf-Hamouda/Kasper-Template-Two",
+        },
+        {
+          title: "Flex-Panel-Gallery",
+          url:"https://rahaf-hamouda.github.io/Flex-Panel-Gallery/",
+          github: "https://github.com/Rahaf-Hamouda/Flex-Panel-Gallery",
+        },
+        {
+          title: "Array-Cardio",
+          url:"https://rahaf-hamouda.github.io/Array-Cardio/",
+          github: "https://github.com/Rahaf-Hamouda/Array-Cardio",
+        },
+        {
+          title: "Scoped-CSS-Variables-and-JS",
+          url:"https://rahaf-hamouda.github.io/Scoped-CSS-Variables-and-JS/",
+          github: "https://github.com/Rahaf-Hamouda/Scoped-CSS-Variables-and-JS",
+        },
+        {
+          title: "JS-and-CSS-Clock",
+          url:" https://rahaf-hamouda.github.io/-JS-and-CSS-Clock/",
+          github: "https://github.com/Rahaf-Hamouda/-JS-and-CSS-Clock",
+        },
+        {
+          title: "JavaScript-Drum-Kit",
+          url:"https://rahaf-hamouda.github.io/JavaScript-Drum-Kit/",
+          github: "https://github.com/Rahaf-Hamouda/JavaScript-Drum-Kit",
+        },
+        {
+          title: "Type-Ahead",
+          url:"https://rahaf-hamouda.github.io/Type-Ahead/",
+          github: "https://github.com/Rahaf-Hamouda/Type-Ahead",
+        },
+        {
+          title: "HTML5-Canvas-Drawing-App",
+          url:"https://rahaf-hamouda.github.io/HTML5-Canvas-Drawing-App/",
+          github: "https://github.com/Rahaf-Hamouda/HTML5-Canvas-Drawing-App",
+        },
+      ]}
+    />
+  </div>
+)}
+{activeGallery === "react" && (
+  <div ref={galleryRef} className="active-gallery-wrapper">
+    <ProjectLinks
+      links={[
+        {
+          title: "Beauty Salon",
+          url: "https://beauty-project-pi4w.vercel.app/",
+          github: "https://github.com/Rahaf-Hamouda/Beauty-Project",
+          isReact: true
+        }
+      ]}
+    />
+  </div>
+)}
         </div>
       )}
     </section>
