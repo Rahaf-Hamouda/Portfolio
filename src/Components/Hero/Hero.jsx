@@ -95,7 +95,7 @@ const Intro = () => {
 
         <motion.span className="introText" variants={textVariants}>
           I'm<span className="introName"> Rahaf</span> <br />
-           Front-End Develope
+           Front-End Developer
         </motion.span>
 
         <motion.p className="introPara" variants={textVariants}>
